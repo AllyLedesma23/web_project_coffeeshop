@@ -119,7 +119,73 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="username">Nombre*</label>
+              <input
+                id="username"
+                name="username"
+                class="form__input"
+                type="text"
+                placeholder="Nombre"
+                required
+              />
+
+              <label class="form__label" for="diner"
+                >Número de comensales*</label
+              >
+              <input
+                id="diner"
+                name="diner"
+                class="form__input"
+                type="number"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+
+              <label class="form__label" for="date-time">Fecha y hora*</label>
+              <input
+                id="date-time"
+                name="date-time"
+                class="form__input"
+                type="datetime-local"
+                required
+              />
+
+              <label class="form__label" for="email"
+                >Tu correo electrónico*</label
+              >
+              <input
+                id="email"
+                name="email"
+                class="form__input"
+                type="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+
+            <button class="form__button">Reservar una mesa</button>
+
+            <label class="form__terms" for="terms">
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                name="terms"
+                id="terms"
+                name="terms"
+                required
+              />
+              <label class="form__label form__label_type_terms" for="terms"
+                >Acepto los términos de uso</label
+              >
+            </label>
+          </form>
+        </section>
       </main>
 
       <footer class="footer" id="footer"></footer>
