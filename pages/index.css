@@ -225,6 +225,7 @@
 }
 
 .form__input::placeholder {
+  content: "";
   margin: 15px 20px;
   color: #838383;
   font-size: 20px;
